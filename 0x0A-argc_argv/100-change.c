@@ -32,14 +32,14 @@ return (0);
 
 /*Declaring while*/
 
-while (coins[position])
+while (coins[position] != '\0')
 
 {
 if (total / coins[position])
 {
 aux = (total / coins[position]);
 change += aux;
-total -= coins[position] = aux;
+total -= coins[position] *  aux;
 }
 
 position++;
